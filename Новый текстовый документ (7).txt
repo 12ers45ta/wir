@@ -1,0 +1,95 @@
+1. cat>test
+echo "Hello Wordl"
+-bash-2.05b$ chmod 711 test
+-bash-2.05b$ ls -l test
+-rwx--x--x  9 student1  vivt08  21 April  21 21:41 test
+-bash-2.05b$ ./test
+Hello Wordl
+-bash-2.05b$
+
+2. echo $PATH
+/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/X11R6/bin:/home/vivt08/student9/bin
+
+3. set
+BASH=/usr/local/bin/bash
+BASH_VERSINFO=([0]="2" [1]="05b" [2]="0" [3]="1" [4]="release" [5]="i386-portbld-freebsd4.9")
+BASH_VERSION='2.05b.0(1)-release'
+BLOCKSIZE=K
+COLUMNS=80
+DIRSTACK=()
+EDITOR=vi
+ENV=/home/vivt08/student9/.shrc
+EUID=1038
+FTP_PASSIVE_MODE=YES
+GROUPS=()
+HISTFILE=/home/vivt08/student9/.bash_history
+HISTFILESIZE=500
+HISTSIZE=500
+HOME=/home/vivt08/student9
+HOSTNAME=labserv.lf
+HOSTTYPE=i386
+IFS=$' \t\n'
+LINES=24
+LOGNAME=student9
+MACHTYPE=i386-portbld-freebsd4.9
+MAIL=/var/mail/student9
+MAILCHECK=60
+OPTERR=1
+OPTIND=1
+OSTYPE=freebsd4.9
+PAGER=more
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/X11R6/bin:/home/vivt08/student9/bin
+PIPESTATUS=([0]="127")
+PPID=38641
+PS1='\s-\v\$ '
+PS2='> '
+PS4='+ '
+PWD=/home/vivt08/student9
+SHELL=/usr/local/bin/bash
+SHELLOPTS=braceexpand:emacs:hashall:histexpand:history:interactive-comments:monitor
+SHLVL=1
+SSH_CLIENT='172.20.3.101 1093 22'
+SSH_CONNECTION='172.20.3.101 1093 172.20.0.5 22'
+SSH_TTY=/dev/ttyp6
+TERM=xterm
+UID=1038
+USER=student9
+_=SET
+-bash-2.05b$
+
+4. -bash-2.05b$ a=100
+-bash-2.05b$  b=200
+-bash-2.05b$ echo $a+$b
+100+200
+-bash-2.05b$
+—кладываетс€ 100 и 200, но без результата
+
+5. d=`date`
+-bash-2.05b$ echo $d
+Wed May 12 20:59:38 YEKST 2010
+-bash-2.05b$
+
+6. d='date'
+-bash-2.05b$ echo $d
+date
+-bash-2.05b$ d="date"	выдает просто слово date
+-bash-2.05b$ echo $d
+date
+-bash-2.05b$
+
+
+
+7. ѕрисвоить L переменную
+l=`ls -l /etc`;echo $l
+ команда выполнилась
+вышло очень много данных с датами.
+
+8. x=7 y=2
+-bash-2.05b$ a=`expr $x + $y` ; echo $a
+9
+-bash-2.05b$              произошло сложение
+
+9. x=7 y=2
+-bash-2.05b$ a=`expr $x - $y` ; echo $a	вычитание
+5
+-bash-2.05$
