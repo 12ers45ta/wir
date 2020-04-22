@@ -66,7 +66,7 @@ _=SET
 
 5. d=`date`
 -bash-2.05b$ echo $d
-Wed May 12 20:59:38 YEKST 2010
+Wed April 21 21:41:38 YEKST 2020
 -bash-2.05b$
 
 6. d='date'
@@ -88,7 +88,7 @@ l=`ls -l /etc`;echo $l
 8. x=7 y=2
 -bash-2.05b$ a=`expr $x + $y` ; echo $a
 9
--bash-2.05b$       произошло сложение
+-bash-2.05b$    произошло сложение
 
 9. x=7 y=2
 -bash-2.05b$ a=`expr $x - $y` ; echo $a	вычитание         
